@@ -8,7 +8,7 @@ function handleTryClick(event) {
   if (Number(inputNumber.value) == randomNumber) {
     screen1.classList.add("hide")
     screen2.classList.remove("hide")
-    document.querySelector(".screen2 h2").innerText = `Acertou em ${xAttempts} tentativas`
+    screen2.querySelector("h2").innerText = `Acertou em ${xAttempts} tentativas`
   }
   inputNumber.value=""
   xAttempts++
